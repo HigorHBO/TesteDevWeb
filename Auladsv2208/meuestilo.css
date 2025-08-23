@@ -1,0 +1,32 @@
+
+
+body{
+    background-color: rgba(193, 38, 255, 0.329);
+}
+
+
+
+#teste{
+    border-style: solid;
+}
+
+/*seletor de classe*/
+.bonitinho{
+    background-color: chartreuse;
+}
+p{
+    color: black;
+}
+
+li{
+    font-family: 'Times New Roman', Times, serif;
+background-color: rgb(120, 7, 2);
+}
+
+li.active{
+    background-color: rgb(110, 79, 245);
+}
+
+.space{
+    padding: 2rem;
+}
