@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(255, 222, 151);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Seletor de class*/
+.cabecalho{
+    margin-top: 3rem;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction:row;
+    
+
+}
+
+.photo{
+    width: 10rem;
+    border-radius: 10rem;
+    right: 100px;
+}
+
+/** Seletor de id*/
+#nome{
+    font-size:2em;
+    text-align: center;
+}
+
+.nome-sub{
+    margin: 0rem 2rem 0rem 2rem;
+    width:70%;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    padding: 2rem;
+}
+
+.menu{
+    width: 40%;
+    background-color: rgb(245, 154, 17);
+    
+}
+
+.conteudo{
+    width: 70%;
+    padding: 2rem;
+}
