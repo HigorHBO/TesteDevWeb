@@ -1,0 +1,28 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(89, 89, 209, 0.623);
+    
+}
+header{
+    text-align: center;
+    
+    
+}
+
+label{
+    display: block;
+    
+}
+
+.formulario{
+    margin-left: 8rem;
+    margin-right: 2rem;
+    border-style: dashed;
+    padding: 1rem;
+
+}
+
+input{
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+}
