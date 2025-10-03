@@ -1,13 +1,16 @@
 
-.body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 
 }
-#nome{
+#id menu{
  font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
 
 .cabecario {
     background-color: #927fe9f6;
@@ -37,8 +40,6 @@
     background-color: #ffffff;
     padding: 30px;
     }
-
-
 
 
 
