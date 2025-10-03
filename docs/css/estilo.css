@@ -5,6 +5,10 @@
     line-height: 1.6;
 
 }
+#id menu{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
 .cabecario {
     background-color: #927fe9f6;
     padding: 20px;
