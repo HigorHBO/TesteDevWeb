@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz de HTML</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+ </head>
+<body class="bg-dark text-white">
+    <h1 class="text-center mb-4">Quiz de HTML - 5 Perguntas</h1>
+    <h2 class="text-center text-primary mb-5" id="pontuacao">Pontos: 0</h2>
+
+    <div class="container">
+    <div class="pergunta ">
+        <p><strong>1. Qual tag cria um parágrafo?</strong></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p1" value="errado">
+            <label class="form-check-label">&lt;div&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p1" value="certo">
+            <label class="form-check-label">&lt;p&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p1" value="errado">
+            <label class="form-check-label">&lt;span&gt;</label>
+        </div>
+    </div>
+
+    <div class="pergunta">
+        <p><strong>2. Qual tag faz um link?</strong></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p2" value="errado">
+            <label class="form-check-label">&lt;link&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p2" value="certo">
+            <label class="form-check-label">&lt;a&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p2" value="errado">
+            <label class="form-check-label">&lt;url&gt;</label>
+        </div>
+    </div>
+
+    <div class="pergunta">
+        <p><strong>3. Qual tag cria uma lista numerada?</strong></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p3" value="errado">
+            <label class="form-check-label">&lt;ul&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p3" value="certo">
+            <label class="form-check-label">&lt;ol&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p3" value="errado">
+            <label class="form-check-label">&lt;list&gt;</label>
+        </div>
+    </div>
+
+    <div class="pergunta">
+        <p><strong>4. Qual atributo coloca uma imagem?</strong></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p4" value="errado">
+            <label class="form-check-label">href</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p4" value="certo">
+            <label class="form-check-label">src</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p4" value="errado">
+            <label class="form-check-label">link</label>
+        </div>
+    </div>
+
+    <div class="pergunta">
+        <p><strong>5. Qual tag HTML5 é o cabeçalho da página?</strong></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p5" value="errado">
+            <label class="form-check-label">&lt;head&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p5" value="certo">
+            <label class="form-check-label">&lt;header&gt;</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="p5" value="errado">
+            <label class="form-check-label">&lt;top&gt;</label>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg" onclick="corrigir()">Verificar Respostas</button>
+        <button class="btn btn-danger btn-lg" onclick="zerar()">Zerar Tudo</button>
+    </div>
+
+</div>
+<script>
+    function corrigir() {
+        let pontos = 0;
+
+        if (document.querySelector('input[name="p1"]:checked')?.value === "certo") pontos++;
+        if (document.querySelector('input[name="p2"]:checked')?.value === "certo") pontos++;
+        if (document.querySelector('input[name="p3"]:checked')?.value === "certo") pontos++;
+        if (document.querySelector('input[name="p4"]:checked')?.value === "certo") pontos++;
+        if (document.querySelector('input[name="p5"]:checked')?.value === "certo") pontos++;
+
+        document.getElementById("pontuacao").innerText = "Pontos: " + pontos;
+
+        alert("Você acertou " + pontos + " de 5!");
+    }
+
+    function zerar() {
+        document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
+        document.getElementById("pontuacao").innerText = "Pontos: 0";
+    }
+</script>
+
+</body>
+</html>
